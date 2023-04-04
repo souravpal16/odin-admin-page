@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+:root{
+  --blue: #2563eb;
+  --blue2: #3b82f6;
+  --gray: #d1d5db;
+  --gray2: #6b7280;
+  --white: #f3f4f6;
+  --white2: #fafaf9;
+  --yellow: #eab308;
+  --black: #09090b;
+}
+
+body{
+  font-family: Roboto, sans-serif;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/*SIDE-BAR*/
+
+.side-bar{
+  padding: 10px 70px 0px 16px;
+  background-color: var(--blue2);
+}
+
+.logo-row{
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.color{
+  filter: brightness(0) invert(1);
+}
+
+h1{
+  margin: 0;
+  color: var(--white); 
+  font-size: 24px;
+}
+
+.icon{
+  width: 24px;
+  height: 24px;
+  margin-right: 28px;
+}
+
+.row-item{
+  display: flex;
+  align-items: center;
+  width: 150px;
+  margin-top: 14px;
+  padding-left: 16px;
+}
+
+h3{
+  margin: 0;
+  color: var(--white);
+  font-size: 16px
+}
+
+.web-settings{
+  margin-top: 64px;
+}
