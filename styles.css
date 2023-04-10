@@ -16,7 +16,7 @@
 
 body{
   font-family: Roboto, sans-serif;
-  height: 100vh;
+  height: 100%;
   display: flex;
   margin: 0;
   padding: 0;
@@ -95,12 +95,13 @@ h3{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 30px 10px 20px;
+  padding: 0px 30px 10px 40px;
 }
 
 .row-1 div{
   display: flex;
   align-items: center;
+  padding-top: 10px;
 }
 
 .greetings{
@@ -162,5 +163,119 @@ h3{
   width: 80px;
   padding: 10px;
   color: var(--white2);
+  font-weight: bold;
+  font-size: 14px;
   margin-right: 20px;
 }
+
+
+/* FEED */
+.feed{
+  display: flex;
+  padding: 24px 20px 32px 20px;
+  gap: 20px;
+}
+
+.grid{
+  flex: 2;
+}
+
+/* .extras{
+  flex: 1;
+} */
+
+.grid-item{
+  /* width: 350px; */
+  height: 200px;
+  background-color: var(--white);
+  border-left: 6px solid var(--yellow);
+  border-radius: 8px;
+  padding: 30px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-details{
+  margin-bottom: auto;
+}
+
+.main-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid .title,
+.extras .title{
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+}
+
+.grid-item{
+  box-sizing:border-box;
+}
+
+.card-title,
+.card-description{
+  margin: 0;  
+  width: 270px;
+}
+
+.card-title{  
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.card-description{
+  font-size: 14px;
+  color: var(--gray2);
+}
+
+.card-helpers{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.announcements{
+  margin-bottom: 28px;
+  width: 300px;
+}
+
+.single-announcement p{
+  margin: 0;
+  width: 270px;
+}
+
+.announcement-title{
+  font-weight: bold;
+}
+
+.announcements{
+  background-color: var(--white);
+  padding: 30px 20px 30px 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+.trending{
+  background-color: var(--white);
+  padding: 30px 20px 10px 20px;
+  border: none;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.single-trending{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.single-trending-info p{
+  margin: 0;
+}
+
